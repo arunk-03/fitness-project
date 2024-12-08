@@ -1,10 +1,10 @@
 export default function NavBar() {
     return (
       <>
-      <div className="bg-red-500 w-full h-[6rem] flex items-center justify-center top-0 z-10 sticky opacity-99 ">
-      <div className="flex justify-center items-center bg-white w-[99%] h-[4rem] pl-5  mx-auto rounded-md top-0 z-10 sticky">
+      {/* <div className="bg-red-500 w-full h-[6rem] flex items-center justify-center top-0 z-10 sticky opacity-99 "> */}
+      <div className="flex justify-center items-center  w-[100%] h-[4rem] pl-5  mx-auto rounded-b-md top-0 z-10 sticky opacity-98 shadow-lg" style={{ backgroundColor: "#e6fbfb" }}>
           <div className="flex justify-between items-center w-full">
-            <div>NavBar</div>
+            <div className="text-3xl font-bold">FitnessTracker</div>
             <a href="/Home" className="flex ml-auto p-5">
               <h1 className="text-black">Home</h1>
             </a>
@@ -20,7 +20,7 @@ export default function NavBar() {
             </a>
           </div>
           </div>
-        </div>
+        {/* </div> */}
         
 
       </>
