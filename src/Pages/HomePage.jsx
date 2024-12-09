@@ -1,6 +1,9 @@
 import NavBar from "../Components/NavBar";
 import Bottom from "../Components/Bottom";
 import Card from "../Components/Card";
+import { Link } from "react-router-dom";
+
+import siteConfig from "../SiteConfig";
 
 export default function HomePage() {
   return (
@@ -22,7 +25,7 @@ export default function HomePage() {
         <div className="absolute top-1/3 left-10 transform -translate-y-1/2 text-white">
          
           <h1 className="text-[80px] md:text-[100px] lg:text-[120px] font-bold leading-tight drop-shadow-md">
-            Fitness Tracker
+            {siteConfig.siteName}
           </h1>
 
           
@@ -30,14 +33,15 @@ export default function HomePage() {
             A personalized trainer to help you analyze your progress and reach your goals efficiently.
           </p>
 
-
+<Link to="/signup">
           <button className="mt-6 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-[18px] font-semibold transition-all duration-200 shadow-md">
             Get Started
           </button>
+          </Link>
         </div>
       </div>
       <div className="text-4xl font-bold text-black pb-6 m-10 ">
-        Why choose Fitness Tracker?
+        Why choose {siteConfig.siteName}?
       </div>
       <div className="flex flex-row justify-between m-10 gap-x-8 flex-wrap">
   <Card
@@ -57,7 +61,7 @@ export default function HomePage() {
   />
 </div>
 
-      <Bottom />
+      <Bottom/>
     </>
   );
 }
