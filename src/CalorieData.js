@@ -1,6 +1,11 @@
+import WeightData from "./WeightData";
+
 const calorieData = {
-    caloriesGained: 10000,
-    caloriesBurned: 1300,
+    caloriesGained: 1300,
+    caloriesBurned: 1900,
+    weight: 65,
+    goalWeight: 72,
+    
     caloriesNet: function() {
         return this.caloriesGained - this.caloriesBurned;
     },
@@ -11,7 +16,7 @@ const calorieData = {
 
         if (netCalories < 0) {
             statusMessage = `Lost: ${netCalories}`;
-            colorClass = 'text-green-500';  // Green color for calories lost
+            colorClass = 'text-green-500';  //   Green color for calories lost
         } else if (netCalories > 0) {
             statusMessage = `Gained: ${Math.abs(netCalories)}`;
             colorClass = 'text-red-500';  // Red color for calories gained
