@@ -9,6 +9,7 @@ import SignUpPage from './Pages/SignUpPage'
 import AboutPage from './Pages/AboutPage'
 import Dashboard from './Pages/Dashboard'
 import ChatPage from './Pages/ChatPage'
+import Progress from './Pages/Progress'
 import NutritionPlans from './Pages/NutritionPlans'
 
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="/workoutplans" element={<WorkoutPlans />} />
             <Route path="/chat" element={<ChatPage />} />
             <Route path="/nutritionplans" element={<NutritionPlans />} />
+            <Route path="/progress" element={<Progress />} />
           </Routes>
         </main>
     </>
